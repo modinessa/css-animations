@@ -1,6 +1,6 @@
-.hero-backgroung,
+.hero-background,
 .glowing,
-.slidig {
+.sliding {
     background-position: top center;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -11,30 +11,30 @@
     left: 0;
 }
 
-.hero-backgroung {
+.hero-background {
     background-image: url(../assets/Hero_background.png);
     z-index: 1;
 }
 .glowing,
-.slidig {
+.sliding {
     background-clip: padding-box;
     background-position: center 23px;
 }
 
 .glowing {
     animation-name: glowing;
-    animation-duration: 2s;
-    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     background-image: url(../assets/Animation-image-block-1.svg);
     z-index: 5;
 }
 
-.slidig {
+.sliding {
     animation-name: slide;
-    animation-duration: 3s;
-    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     background-image: url(../assets/Animation-image-block-2.svg);
@@ -56,7 +56,18 @@
         transform-origin: center right;
     }
     to {
-        transform: scale(1.1);
+        transform: scale(1.05);
         transform-origin: center right;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-background {
+        background-position: right top;
+    }
+
+    .glowing,
+    .sliding {
+        background-position: right 23px;
     }
 }
