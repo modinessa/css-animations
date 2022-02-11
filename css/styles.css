@@ -138,6 +138,10 @@ button:focus {
     outline: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* My CSS */
 
 :root {
@@ -198,8 +202,7 @@ p {
 button {
     cursor: pointer;
     background-color: var(--blue);
-    /* display: block; */
-    font-family: Oswald Regular;
+    font-family: Oswald;
     margin: 50px auto;
     text-transform: uppercase;
 }

@@ -16,6 +16,10 @@ nav.container {
     width: 100%;
 }
 
+nav.container a {
+    color: var(--white-text);
+}
+
 .home {
     font-weight: 600;
     font-size: 20px;
@@ -60,11 +64,11 @@ span:nth-child(3) {
 
 .menu > li a:hover {
     text-decoration: underline;
-    /*
-    Doesn't work :`(
-    
+
+    /* Doesn't work for chom, bug fixing in progress :`( */
+    text-underline-offset: 4px;
+    text-decoration-color: vas(--white-text);
     text-decoration-thickness: 2px;
-    text-underline-offset: 3px; */
 }
 
 /* Hero block */
